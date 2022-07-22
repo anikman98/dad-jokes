@@ -29,6 +29,11 @@ body {
   flex-direction: column;
 }
 
+
+.container small{
+  font-size: 1.7rem;
+}
+
 .container h1{
   font-weight: 800;
   font-size: 4rem;
@@ -50,10 +55,6 @@ body {
   margin: 20px;
   display: grid;
   place-content: center;
-}
-
-.container small{
-  font-size: 1.7rem;
 }
 
 .btn{
