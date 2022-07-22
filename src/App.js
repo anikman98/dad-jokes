@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import Joke from './Joke';
+import githubIcon from './github.png';
 
 function App() {
 
@@ -24,17 +25,15 @@ function App() {
   },[]);
 
   return (
-    <main>
-      <section className='container h-20'></section>
-      <div className="d-flex justify-content-center w-100 h-100">
-        <div className="container">
+    <>
+      <div className="container">
         <h1>Dad Jokes</h1>
         <small>Cause daddy is always the best</small>
         <Joke joke={joke} />
-        <button className='btn btn-success shadow-lg' onClick={getJoke}>new joke</button>
-        </div>
+        <button className='btn shadow-lg' onClick={getJoke}>New joke</button>
+        <span><a href="https://github.com/anikman98/dad-jokes" target="_blank"><img className='github' src={githubIcon} alt="github link" width={20} /></a></span>
       </div>
-    </main>
+    </>
   );
 }
 

@@ -25,19 +25,25 @@ body {
 
 .container{
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .container h1{
   font-weight: 800;
-  font-size: 5rem !important;
+  font-size: 4rem;
   padding-top: 8%;
 }
 
 .card{
   border-radius: 25px;
-  width: 50%;
-  height: 30%;
-  vertical-align: middle;
+  margin-top: 3rem !important;
+  margin: auto;
+  max-width: 50vw;
+  max-height: 40vh;
+  min-width: 350px;
+  min-height: 200px;
+  background-color: rgba(255,255,255,0.9);
 }
 
 .card-body{
@@ -47,14 +53,19 @@ body {
 }
 
 .container small{
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .btn{
-  position: relative;
   padding: 20px 80px;
-  margin-top: 22%;
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 10px;
+  font-weight: 600;
+  font-size: 1.2em;
+  color: white;
+  background-color: #142cd6;
 }
 
 code {
@@ -62,3 +73,10 @@ code {
     monospace;
 }
 
+.github{
+  position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
